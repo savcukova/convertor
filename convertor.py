@@ -1,5 +1,12 @@
+import os
+
+
+def start_translation(abs_path, translation_pattern):
+    print("zaciname")
+
+
 def appartment_translation():
-    abs_path = ""
+    abs_path = f"{os.getcwd()}{os.sep}solution{os.sep}vstupni_data.txt"
     
     
     translation_pattern = {
@@ -12,7 +19,8 @@ def appartment_translation():
         "byt0007": "4+kk",
     }
     
-    
+    start_translation(abs_path, translation_pattern)
+
 
 if __name__ == "__main__":
     appartment_translation()
