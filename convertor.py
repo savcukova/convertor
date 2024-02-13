@@ -1,8 +1,25 @@
 import os
 
 
-def start_translation(abs_path, translation_pattern):
-    print("zaciname")
+def start_translation(file, translation_pattern):
+    if (os.path.isfile(file)):
+        print("file exists")
+        appartment_data = read_text_file(file)
+    else:
+        print("file not found")
+        quit()
+        
+        
+def iterate_through_all_data(file):
+    results = []
+    
+    for row in file:
+        pass
+        
+        
+def read_text_file(file):
+    with open("file", mode = "r", encoding= "UTF-8") as txt:
+        return txt.readlines()
 
 
 def appartment_translation():
